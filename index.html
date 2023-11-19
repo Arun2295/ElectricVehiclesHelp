@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV help</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="icon" href=".//favicons/android-icon-144x144.png"> -->
+    <link rel="icon" href="profile.png">
+</head>
+<body>
+    <nav class="navbar grid-item">
+        <a href="#home" class="nav_options"><img src="profile.png" alt="profile"></a>
+        <a href="#home" class="nav_options">HOME</a>
+        <a href="#about" class="nav_options">About</a>
+        <a href="#issues" class="nav_options">Issues faced by EVs</a>
+        <a href="#map" class="nav_options">Map</a>
+        <a href="#contact" class="nav_options">Contact</a>
+        <div class="nav_options color_picker">
+            <div class="color" id="color1" ></div>
+            <div class="color" id="color2" ></div>
+            <div class="color" id="color3" ></div>
+            <div class="color" id="color4" ></div>
+            <div class="color" id="color5" ></div>
+            <div class="color" id="color6" ></div>
+            <div class="color" id="color7" ></div>
+            <div class="color" id="color8" ></div>
+            <div class="color" id="color9" ></div>
+            <div class="color" id="color10" ></div>
+        </div>
+    </nav>    
+
+    <div class=" sections grid-item">
+        <h1><u class="heading">ELECTRIC VEHICLES</u><br> A SUSTAINABLE FUTURE</h1>
+        <section id="home">
+            <br>
+            <h2>Why Electric Vehicles?</h2>
+            <br>
+            <p>Electric vehicles (EVs) are a crucial part of our journey towards a sustainable and eco-friendly future. By choosing electric vehicles, we contribute to reducing greenhouse gas emissions and decreasing our dependence on fossil fuels.</p>
+            <br>
+            <h2>Benefits of Electric Vehicles</h2>
+            <br>
+            <ul>
+                <li><strong>Environmental Impact:</strong> EVs produce zero tailpipe emissions, helping to improve air quality and combat climate change.</li>
+                <li><strong>Cost Savings:</strong> Over time, electric vehicles can be more cost-effective due to lower maintenance and fuel costs.</li>
+                <li><strong>Energy Efficiency:</strong> EVs are generally more energy-efficient than traditional vehicles, making better use of resources.</li>
+                <li><strong>Government Incentives:</strong> Many governments offer incentives such as tax credits and rebates to encourage the adoption of electric vehicles.</li>
+            </ul>
+            <br>
+            <h2>Join the Electric Revolution</h2>
+            <p>Make a positive impact on the environment and your wallet by choosing electric vehicles. Embrace the future of transportation and be a part of the electric revolution!</p>
+            <br>
+        </section>
+
+       <hr>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                This Website is dedicated to identifying and solving problems faced by Electric vehicles.
+                We believe that for a sust future where we use as much clean energy as possible, the advent 
+                of electric vehicles becomes vital and in that spirit we have made this website. We as 
+                students can only do so much for this cause but we are taking a first step by creating this 
+                website. One of the major problems faced by Electric vehicles are lack of charging stations 
+                and not being able to find charging spots at the right time. If you go to the maps section
+                of this page you can search for nearby charging station using your current location or by 
+                manually entering the city you are in or any landmark near you. 
+            </p>
+        </section>
+        <hr>
+        
+        <section id="issues">
+            <h2>Issues to be Addressed</h2>
+            <div class="issue_div1">
+                <h3>1. Limited Range</h3> 
+                <p>The range of an EV on huge concern for users. While many companies have been improving the ranges with advancements in battery technology it is still one of the negatives of EVs. This causes a phenomenon  called range anxiety due to which people avoid buying EVs.</p>
+                <img  src="./Media/limited_range.jpg"> 
+            </div>
+            <div class="issue_div2">
+                <h3>2. Charging Infrastructure</h3> 
+                <p>The availability and accessibility of charging stations can be a major obstacle, particularly in rural or less developed areas. Charging infrastructure needs to expand to make EVs more practical for all consumers.</p>
+                <img src="./Media/source_of_electricity.png"> 
+            </div>
+            <div class="issue_div1">
+                <h3>3. Charging Time</h3>
+                <p>Charging an electric vehicle takes longer than filling up a petrol,  diesel or CNG vehicle. There is a urgent need for new advanced charging technology that can reduce the charging time.</p>
+                <a href="./Media/Charging-time-for-electric-vehicles-wallbox-charging-station-supercharger-2048x1287-1-1024x644.jpeg" target="_blank"><img src="./Media/Charging-time-for-electric-vehicles-wallbox-charging-station-supercharger-2048x1287-1-1024x644.jpeg"></a>
+            </div>
+            <div class="issue_div2">
+                <h3>4. High Cost</h3>
+                <p>Electric vehicles tend to be more expensive compared to normal vehicles of same level.</p>
+                <img src="./Media/why-electric-cars-are-expensive.png">
+            </div>
+            <div class="issue_div1">
+                <h3>5. Environmental Impact of Battery Production</h3>
+                <p>The production of lithium-ion batteries for EVs has environmental impacts, including resource extraction and energy-intensive manufacturing. Efforts are being made to improve the sustainability of battery production.</p>
+                <img src="./Media/battery-waste.jpg">
+            </div>
+            <div class="issue_div2">
+                <h3>6. Recycling and Disposal</h3>
+                <p>Proper disposal and recycling of EV batteries are important to minimize environmental impact. Developing recycling processes and infrastructure is an ongoing challenge.</p>            
+                <img src="./Media/af0ece8c-8a78-4494-86a8-062fe9c4d6deezgif.com-gif-maker-(29).webp">
+            </div>
+        </section>
+       <hr>
+        <section id="map">
+            <h3>Search for Nearby Charging Station by</h3>
+            <div class="map_search">
+                <p style="grid-column: 1; grid-row: 1;">Search by your location</p>
+                <div id="locationTag" class="locationTag"><img src="./Media/target.png"></div>
+                <p style="grid-column: 2; grid-row: 1;">Search by City/Landmark</p>
+                <div class="map_search_text">
+                    <input id="searchByCityText" type="text">
+                    <input id="searchByCityButton" type="submit" value="Search">
+                </div>                
+            </div>
+            <div id="gmaps">
+                <iframe></iframe>
+            </div>
+        </section>
+       <hr>
+        
+       
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="person1">
+                <strong>Jayendra Bharti</strong>
+                <p>Email: jay.bharti2804@gmail.com</p>
+            </div>
+            <div class="person2">
+                <strong>Arun Sambyal</strong>
+                <p>Email: xxxxx@gmail.com</p>
+            </div>
+            <div class="person3">
+                <strong>Dev Adarsh</strong>
+                <p>Email: xxxxxx@gmail.com</p>
+            </div>
+        </section>
+        </div>
+
+<script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
